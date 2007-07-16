@@ -1,11 +1,11 @@
-%define version 2.1.1
+%define version 2.2.1
 %define tarname CherryPy-%{version}
 
 
 Summary:        A Python-based framework for web application development 
 Name:           python-cherrypy
 Version:        %version
-Release:        %mkrel 2
+Release:        %mkrel 1
 Source0:        http://prdownloads.sourceforge.net/cherrypy/%tarname.tar.bz2
 License:        BSD
 Group:          Development/Python
