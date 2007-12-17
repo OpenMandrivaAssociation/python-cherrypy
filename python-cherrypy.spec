@@ -10,7 +10,6 @@ Source0:        http://prdownloads.sourceforge.net/cherrypy/%tarname.tar.bz2
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	python-devel
 BuildArch:      noarch
 
