@@ -1,4 +1,4 @@
-%define version 3.1.0
+%define version 3.1.1
 %define tarname CherryPy-%{version}
 
 
