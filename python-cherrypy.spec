@@ -5,7 +5,7 @@
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
 Version:        %version
-Release:        %mkrel 1
+Release:        %mkrel 2
 Source0:        http://prdownloads.sourceforge.net/cherrypy/%tarname.tar.bz2
 License:        BSD
 Group:          Development/Python
