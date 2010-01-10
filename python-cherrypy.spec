@@ -1,18 +1,17 @@
-%define version 3.1.1
+%define version 3.1.2
 %define tarname CherryPy-%{version}
-
 
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
 Version:        %version
-Release:        %mkrel 2
-Source0:        http://prdownloads.sourceforge.net/cherrypy/%tarname.tar.bz2
+Release:        %mkrel 1
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:        http://download.cherrypy.org/cherrypy/%{version}/CherryPy-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 A Python-based framework for web application development.
@@ -43,11 +42,9 @@ EOF
 %__rm -rf %buildroot
 
 %files
-%defattr(755,root,root)
+%defattr(-,root,root)
 %doc README.txt
 %doc cherrypy/tutorial/*
-%dir %{py_puresitedir}/cherrypy
-%{py_puresitedir}/cherrypy/*
-%{py_puresitedir}/*.egg-info
-
-
+%{py_puresitedir}/cherrypy
+%{py_puresitedir}/CherryPy-%{version}-py%{pyver}.egg-info
+%{_bindir}/cherryd
