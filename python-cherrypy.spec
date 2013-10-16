@@ -2,12 +2,12 @@
 
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
-Version:        3.2.2
+Version:        3.2.4
 Release:        1
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
-Source0:        http://download.cherrypy.org/cherrypy/%{version}/CherryPy-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/source/C/CherryPy/CherryPy-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildArch:      noarch
 
@@ -92,4 +92,5 @@ EOF
 
 * Mon Dec 06 2004 Michael Scherer <misc@mandrake.org> 2.0-0.0a1.1mdk 
 - initial package for Mandrakelinux
+
 
