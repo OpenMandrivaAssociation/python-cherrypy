@@ -2,8 +2,8 @@
 
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
-Version:        3.2.4
-Release:        4
+Version:        3.5.0
+Release:        1
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
@@ -49,7 +49,7 @@ EOF
 
 pushd python2
 cp ../tutorial.conf .
-%{__python} setup.py build
+python setup.py build
 popd
 
 pushd python3
@@ -64,19 +64,19 @@ mv %{buildroot}/%{_bindir}/cherryd %{buildroot}/%{_bindir}/python3-cherryd
 popd
 
 pushd python2
-%{__python} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 popd
 
 %files -n python-cherrypy
 %doc python2/README.txt
 %doc python2/cherrypy/tutorial/*
-%{python_sitelib}/cherrypy/*
-%{python_sitelib}/*.egg-info
+%{py_puresitedir}/cherrypy/*
+%{py_puresitedir}/*.egg-info
 %{_bindir}/cherryd
 
 %files -n python3-cherrypy
 %doc python3/README.txt
 %doc python3/cherrypy/tutorial/*
-%{python3_sitelib}/cherrypy/*
-%{python3_sitelib}/*.egg-info
+%{py3_puresitedir}/cherrypy/*
+%{py3_puresitedir}/*.egg-info
 %{_bindir}/python3-cherryd

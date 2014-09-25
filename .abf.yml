@@ -1,4 +1,5 @@
 removed_sources:
   CherryPy-3.2.2.tar.gz: ad47d2d9c2c68231f0ea1b09ffb2927f42a493b6
-sources:
   CherryPy-3.2.4.tar.gz: 9a398e29e614c567d8dd0427ca28111b90df628f
+sources:
+  CherryPy-3.5.0.tar.gz: 5a7ed17e4e85ab76b07647ced48541ef86951fe9
