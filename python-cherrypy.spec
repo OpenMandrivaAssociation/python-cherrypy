@@ -2,15 +2,16 @@
 
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
-Version:        3.2.4
-Release:        4
+Version:        3.6.0
+Release:        1
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
 Source0:        https://pypi.python.org/packages/source/C/CherryPy/CherryPy-%{version}.tar.gz
-BuildRequires:	python-devel
+BuildRequires:	python2-devel
 BuildRequires:  python3-devel
 BuildArch:      noarch
+%rename		python3-cherrypy
 
 %description
 A Python-based framework for web application development.
@@ -19,12 +20,12 @@ CheryPy allows you to write and easyly deploy web applications, thanks
 to a bundled webserver. It features a automated way to map an url to a
 mathod, allowing you to describe your site as a python class.
 
-%package -n python3-cherrypy
+%package -n python2-cherrypy
 Summary:        A Python-based framework for web application development
 Group:          Development/Python
-Requires:       python3
+Requires:       python2
  
-%description -n python3-cherrypy
+%description -n python2-cherrypy
 A Python-based framework for web application development.
 
 CheryPy allows you to write and easyly deploy web applications, thanks
@@ -49,7 +50,7 @@ EOF
 
 pushd python2
 cp ../tutorial.conf .
-%{__python} setup.py build
+%{__python2} setup.py build
 popd
 
 pushd python3
@@ -58,25 +59,25 @@ cp ../tutorial.conf .
 popd
 
 %install
-pushd python3
-%{__python3} setup.py install --root=%{buildroot} 
-mv %{buildroot}/%{_bindir}/cherryd %{buildroot}/%{_bindir}/python3-cherryd
+pushd python2
+%{__python2} setup.py install --root=%{buildroot}
+mv %{buildroot}/%{_bindir}/cherryd %{buildroot}/%{_bindir}/python2-cherryd
 popd
 
-pushd python2
-%{__python} setup.py install --root=%{buildroot}
+pushd python3
+%{__python3} setup.py install --root=%{buildroot} 
 popd
 
 %files -n python-cherrypy
-%doc python2/README.txt
-%doc python2/cherrypy/tutorial/*
+%doc python3/README.txt
+%doc python3/cherrypy/tutorial/*
 %{python_sitelib}/cherrypy/*
 %{python_sitelib}/*.egg-info
 %{_bindir}/cherryd
 
-%files -n python3-cherrypy
-%doc python3/README.txt
-%doc python3/cherrypy/tutorial/*
-%{python3_sitelib}/cherrypy/*
-%{python3_sitelib}/*.egg-info
-%{_bindir}/python3-cherryd
+%files -n python2-cherrypy
+%doc python2/README.txt
+%doc python2/cherrypy/tutorial/*
+%{python2_sitelib}/cherrypy/*
+%{python2_sitelib}/*.egg-info
+%{_bindir}/python2-cherryd
