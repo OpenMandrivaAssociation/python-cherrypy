@@ -8,7 +8,8 @@ License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
 Source0:        https://pypi.python.org/packages/22/57/7b2395e73821d17c9c73e67873dfecdd592f14ddff0af894f952245b5f55/CherryPy-%{version}.tar.gz
-BuildRequires:	python2-devel
+BuildRequires:  python2-devel
+BuildRequires:  python2-setuptools
 BuildRequires:  python3-devel
 BuildArch:      noarch
 %rename		python3-cherrypy
