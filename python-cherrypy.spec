@@ -11,6 +11,7 @@ Source0:        https://pypi.python.org/packages/22/57/7b2395e73821d17c9c73e6787
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools
 BuildRequires:  python3-devel
+BuildRequires:  python-setuptools
 BuildArch:      noarch
 %rename		python3-cherrypy
 
