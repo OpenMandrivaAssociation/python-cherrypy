@@ -2,12 +2,12 @@
 
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
-Version:	18.5.0
+Version:	18.6.0
 Release:	1
 License:        BSD
 Group:          Development/Python
 URL:            http://www.cherrypy.org
-Source0:	https://files.pythonhosted.org/packages/0d/cc/4630fdf096859635cfcb5f9d560ec17b4114b1cc8355c7cd47b65c5f80c7/CherryPy-18.5.0.tar.gz
+Source0:	https://files.pythonhosted.org/packages/f5/f0/72f632c9503f1ffd765561e0e18eba19de746bddebe615deb699c210be60/CherryPy-18.6.0.tar.gz
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools
 BuildRequires:  python3-devel
