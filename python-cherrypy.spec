@@ -6,7 +6,7 @@ Version:	18.10.0
 Release:	1
 License:        BSD
 Group:          Development/Python
-URL:            http://www.cherrypy.org
+URL:            https://www.cherrypy.org
 Source0:	https://files.pythonhosted.org/packages/source/C/CherryPy/cherrypy-%{version}.tar.gz
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(pip)
