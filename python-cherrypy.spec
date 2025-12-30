@@ -3,7 +3,7 @@
 Summary:        A Python-based framework for web application development
 Name:           python-cherrypy
 Version:	18.10.0
-Release:	2
+Release:	3
 License:        BSD
 Group:          Development/Python
 URL:            https://www.cherrypy.org
